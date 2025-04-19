@@ -52,7 +52,7 @@ async def get_events():
 
 @app.post("/events/", status_code=status.HTTP_201_CREATED)
 async def add_events(event_model: EventModel):
-    db = event_db()
+    db = event_db
     db.append(event_model.model_dump())
     save_db(db)
     return JSONResponse("new event is added")

@@ -77,7 +77,7 @@ class EventModel(BaseModel):
     index: int = Field(..., description="ID")
     name: str = Field(..., description="Name")
     palce: str = Field(..., description="place")
-    date: Annotated[str, Field(..., examples="2001-10-21", description="date")] 
+    date: Annotated[str, Field(..., examples=["2001-10-21"], description="date")] 
     description: Optional[str] = Field(None, description="description")
 
 

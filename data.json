@@ -1,0 +1,81 @@
+[
+    {
+      "index": 0,
+      "name": "One Piece",
+      "palce": "Manga Shelf A1",
+      "date": "1997",
+      "description": "A story about pirates seeking the legendary treasure One Piece."
+    },
+    {
+      "index": 1,
+      "name": "Naruto",
+      "palce": "Manga Shelf A2",
+      "date": "1999",
+      "description": "The journey of a young ninja aspiring to become Hokage."
+    },
+    {
+      "index": 2,
+      "name": "Attack on Titan",
+      "palce": "Manga Shelf B1",
+      "date": "2009",
+      "description": "Humanity's struggle against giant humanoid Titans."
+    },
+    {
+      "index": 3,
+      "name": "Death Note",
+      "palce": "Manga Shelf C3",
+      "date": "2003",
+      "description": "A high school student discovers a notebook that can kill anyone."
+    },
+    {
+      "index": 4,
+      "name": "My Hero Academia",
+      "palce": "Manga Shelf B2",
+      "date": "2014",
+      "description": "A world where people have superpowers called Quirks."
+    },
+    {
+        "index": 5,
+        "name": "Tokyo Ghoul",
+        "palce": "Manga Shelf D1",
+        "date": "2011",
+        "description": "A college student becomes a half-ghoul after a deadly encounter."
+      },
+      {
+        "index": 6,
+        "name": "Demon Slayer",
+        "palce": "Manga Shelf D2",
+        "date": "2016",
+        "description": "A boy becomes a demon slayer to avenge his family and save his sister."
+      },
+      {
+        "index": 7,
+        "name": "Fullmetal Alchemist",
+        "palce": "Manga Shelf B3",
+        "date": "2001",
+        "description": "Two brothers use alchemy in search of the Philosopher's Stone."
+      },
+      {
+        "index": 8,
+        "name": "Bleach",
+        "palce": "Manga Shelf A3",
+        "date": "2001",
+        "description": "A teenager becomes a Soul Reaper to protect the living from evil spirits."
+      },
+      {
+        "index": 9,
+        "name": "Jujutsu Kaisen",
+        "palce": "Manga Shelf D3",
+        "date": "2018",
+        "description": "A high school student fights curses after swallowing a cursed object."
+      },
+      {
+        "index": 10,
+        "name": "Chainsaw Man",
+        "palce": "Manga Shelf D4",
+        "date": "2018",
+        "description": "A young man becomes a devil hunter with a chainsaw demon inside him."
+      }
+
+  ]
+  
