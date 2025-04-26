@@ -4,13 +4,12 @@ from fastapi import FastAPI, HTTPException, status, Query, Path
 from fastapi.responses import JSONResponse
 import uvicorn
 
-from data_action import get_db, save_db
+from data_action import get_db, save_db, get_event_db, save_event_db
 from models import BookModel, BookModellResponse, UserModel, EventModel, EventModellResponse
 
 
 
 app = FastAPI()
-event_db: List[EventModel] = []
 
 
 @app.get("/books/", response_model=List[BookModellResponse], status_code=status.HTTP_200_OK)
@@ -47,22 +46,22 @@ async def add_user(user: UserModel):
 
 @app.get("/events/", response_model=List[EventModellResponse], status_code=status.HTTP_200_OK)
 async def get_events():
-    return event_db()
+    return get_event_db
 
 
 @app.post("/events/", status_code=status.HTTP_201_CREATED)
 async def add_events(event_model: EventModel):
-    db = event_db
+    db = get_event_db
     db.append(event_model.model_dump())
-    save_db(db)
+    save_event_db(db)
     return JSONResponse("new event is added")
 
 
 @app.put("/events/{index}", response_model=EventModellResponse)
 def update_event(index: int, updated_event: EventModel):
-    for i, event in enumerate(event_db):
+    for i, event in enumerate(get_event_db):
         if event.index == index:
-            event_db[i] = updated_event
+            get_event_db[i] = updated_event
             return updated_event
     raise HTTPException(status_code=404, detail="Event not found")
 
@@ -71,9 +70,9 @@ def update_event(index: int, updated_event: EventModel):
 
 @app.delete("/events/{index}", status_code=204)
 def delete_event(index: int):
-    for i, event in enumerate(event_db):
+    for i, event in enumerate(get_event_db):
         if event.index == index:
-            event_db.pop(i)
+            get_event_db.pop(i)
             return
     raise HTTPException(status_code=404, detail="Event not found")
 

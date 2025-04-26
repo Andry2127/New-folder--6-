@@ -1,0 +1,38 @@
+[
+    {
+      "index": 1,
+      "name": "Music Festival",
+      "place": "Central Park",
+      "date": "2025-06-15",
+      "description": "An outdoor festival featuring local bands and food trucks."
+    },
+    {
+      "index": 2,
+      "name": "Tech Conference",
+      "place": "Convention Center",
+      "date": "2025-09-10",
+      "description": "A gathering of tech enthusiasts to discuss AI and innovation."
+    },
+    {
+      "index": 3,
+      "name": "Art Exhibition",
+      "place": "City Art Gallery",
+      "date": "2025-05-22",
+      "description": "Showcasing modern art from emerging artists."
+    },
+    {
+      "index": 4,
+      "name": "Marathon",
+      "place": "Downtown Streets",
+      "date": "2025-10-01",
+      "description": "Annual marathon event with thousands of participants."
+    },
+    {
+      "index": 5,
+      "name": "Food Fair",
+      "place": "Market Square",
+      "date": "2025-07-04",
+      "description": "A food lover's paradise with cuisines from around the world."
+    }
+  ]
+  
